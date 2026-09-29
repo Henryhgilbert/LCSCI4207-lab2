@@ -106,7 +106,7 @@ support.encryptor9("ab")
 support.encryptor9("abc")
 support.encryptor9("ABCDE")
 fun my-encryptor9(s :: String) -> Number:
-  doc: "returns the character code of the first character"
+  doc: "takes characters 2 through 4 and repeats them five times"
   string-to-code-point(string-substring(s, 0, 1))
 end
 # Encryptor 10 experiments
@@ -118,7 +118,7 @@ support.encryptor10("aXbc")
 support.encryptor10("abXc")
 support.encryptor10("abcX")
 fun my-encryptor10(s :: String) -> String:
-  doc: "replaces a with b and repeats the string five times"
+doc: "takes characters 2 through 4 and repeats them five times"
 string-repeat(string-substring(s, 1, 4), 5)
 end
 
